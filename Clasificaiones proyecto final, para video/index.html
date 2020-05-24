@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title></title>
+    <meta charset="utf-8">
+    <script src="CargarTabla.js"></script>
+  </head>
+  <body>
+        <!--El codigo de abajo sirve para agregar un nuevo equipo al apretar el botón-->
+        <div class="col-sm-6">
+            <div class="form-group">
+              <label for="equipo">Equipo nuevo.</label>
+              <button type="button" onclick="nuevoEquipo()">Agregar</button>
+
+            </div>   
+            <!--El codigo de abajo le perdenece al despliegue de la tabla con equipos y puntajes-->
+        <div class="col-sm-6">
+          <div id="tabla-clasificacion">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Equipos</th>
+                  <th>Puntos</th>
+                </tr>
+              </thead>
+              <tbody id="equipos-tabla">
+                
+              </tbody>
+            </table>
+          </div>  
+          <button type="button" onclick="mostrarTabla()">Observar Resultados </button>
+        </div>
+  </body>
+</html>
